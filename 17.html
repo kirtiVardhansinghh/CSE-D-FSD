@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome </title>
+    <style>
+        body {
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .welcome {
+            font-size: 3rem;
+            color: #fff;
+            letter-spacing: 0.2em;
+            animation: fadeInScale 2s ease-in-out, colorChange 3s infinite alternate;
+        }
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes colorChange {
+            0% { color: #fff; }
+            50% { color: #00eaff; }
+            100% { color: #ff00c8; }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome">Welcome!</div>
+</body>
+</html>
